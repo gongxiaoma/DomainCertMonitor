@@ -2,12 +2,8 @@ DomainCertMonitor支持自动拉取阿里云和腾讯云域名进行TLS证书探
 
 # 一、基础环境
 1、代理设置
-推荐使用腾讯云镜像加速下载：
-Windows:
+推荐使用腾讯云镜像加速下载（Windows）：
 > set GOPROXY=https://mirrors.tencent.com/go/
-
-Linux 或 MacOS:
-$ export GOPROXY=https://mirrors.tencent.com/go/
 
 1、腾讯云SDK
 > go get -v -u github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common
