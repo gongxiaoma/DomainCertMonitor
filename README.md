@@ -48,6 +48,7 @@ manual:
 ```
 
 # 三、运行打包
+```
 1、运行
 > go run .\domain_cert_monitor.go
 
@@ -58,11 +59,12 @@ manual:
 Linux下运行
 $ cd /opt/script/domain_cert_monitor
 $ .\domain_cert_monitor
-
+```
 
 # 四、生产部署
 1、prometheus相关配置文件
 （1）blackbox-exporter配置文件
+```
 $ cat /opt/blackbox_exporter/blackbox.yml
 modules:
   http_2xx:
@@ -78,8 +80,10 @@ modules:
       valid_http_versions: ["HTTP/1.1", "HTTP/2.0"]
       valid_status_codes: [200, 301, 302, 400, 401, 403, 500, 502, 503]
   ……
+```
   
 （2）prometheus配置文件
+```
 $ cat /opt/prometheus/prometheus.yml
 - job_name: aliyun-tencent-httpsdomain
     scrape_interval: 300s
@@ -97,8 +101,11 @@ $ cat /opt/prometheus/prometheus.yml
         target_label: instance
       - target_label: __address__
         replacement: 172.20.15.13:9115
+```
 
 2、定时任务
+```
 $ cd /opt/script/domain_cert_monitor
 $ crontab -l
 30 10 * * * cd /opt/script/domain_cert_monitor && ./domain_cert_monitor
+```
