@@ -48,11 +48,13 @@ manual:
 ```
 
 # 三、运行打包
-```
 1、运行
+```
 > go run .\domain_cert_monitor.go
+```
 
 2、打包
+```
 > go env -w CGO_ENABLED=0 GOOS=linux GOARCH=amd64
 > go build -o domain_cert_monitor .\domain_cert_monitor.go
 
