@@ -20,6 +20,7 @@ DomainCertMonitor支持自动拉取阿里云和腾讯云域名进行TLS证书探
 
 # 二、配置文件
 1、配置文件修改
+```
 > vi config/config.yml
 key:
   cipher_key: "加密解密的key"
@@ -44,6 +45,7 @@ manual:
   domain_list:
     - mqtt.test.com
     - office.test.net:6443
+```
 
 # 三、运行打包
 1、运行
