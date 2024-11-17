@@ -1,0 +1,23 @@
+key:
+  cipher_key: "加密解密的key"
+cloud:
+  alibaba:
+    aliyun_key: "阿里云AK"
+    aliyun_secret: "阿里云AS"
+    region: "cn-shenzhen"
+  tencent:
+    tencent_key: "腾讯云KEY"
+    tencent_secret: "腾讯云密钥"
+api:
+  wx_api: "企业微信机器人"
+  alarmcore_api: "内部告警平台"
+  prometheus_api: "http://127.0.0.1:9090/-/reload"
+file:
+  blackbox_path: "/opt/prometheus/blackbox/http/aliyun-tencent-httpsdomain.yml"
+  labels_web: "web"
+  labels_department: "test-auto"
+manual:
+  expire_day: 15
+  domain_list:
+    - mqtt.test.com
+    - office.test.net:6443
