@@ -5,16 +5,16 @@ DomainCertMonitor支持自动拉取阿里云和腾讯云域名进行TLS证书探
 推荐使用腾讯云镜像加速下载（Windows）：
 > set GOPROXY=https://mirrors.tencent.com/go/
 
-1、腾讯云SDK
+2、腾讯云SDK
 > go get -v -u github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common
 > go get -v -u github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/dnspod/v20210323
 
 
-2、阿里云SDK
+3、阿里云SDK
 > go get -v -u github.com/alibabacloud-go/darabonba-openapi/client                                                                                                            
 > go get -v -u github.com/alibabacloud-go/alidns-20150109/v2/client
 
-3、其它包
+4、其它包
 > go get -v -u github.com/spf13/viper
 
 
@@ -64,7 +64,7 @@ $ .\domain_cert_monitor
 ```
 
 # 四、生产部署
-1、prometheus相关配置文件
+1、prometheus相关配置文件   
 （1）blackbox-exporter配置文件
 ```
 $ cat /opt/blackbox_exporter/blackbox.yml
