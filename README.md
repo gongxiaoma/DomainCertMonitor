@@ -6,7 +6,7 @@ DomainCertMonitor支持自动拉取阿里云和腾讯云域名进行TLS证书探
 > set GOPROXY=https://mirrors.tencent.com/go/
 
 2、腾讯云SDK
-> go get -v -u github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common
+> go get -v -u github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common  
 > go get -v -u github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/dnspod/v20210323
 
 
